@@ -1,14 +1,16 @@
 import * as React from 'react'
 import { Frame, addPropertyControls, ControlType } from 'framer'
 
-export function Task({ name, time, ...props }) {
+export function Task({ name, time, timeAmount, ...props }) {
   return (
     <Frame
       width="100%"
-      height={(time / 180) * 100 + '%'}
+      height={(time / timeAmount) * 100 + '%'}
       background="blue"
       style={{
         borderBottom: '1px solid black',
+        color: 'white',
+        fontSize: 16,
       }}
     >
       {name} : in {time} min
@@ -19,6 +21,7 @@ export function Task({ name, time, ...props }) {
 Task.defaultProps = {
   name: 'Task 1',
   time: 15,
+  timeAmount: 180,
 }
 
 addPropertyControls(Task, {

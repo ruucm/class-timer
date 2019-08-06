@@ -11,7 +11,69 @@
         "centerAnchorX" : 0,
         "centerAnchorY" : 0,
         "children" : [
+          {
+            "__class" : "CodeComponentNode",
+            "aspectRatio" : null,
+            "bottom" : 0,
+            "centerAnchorX" : 0.5,
+            "centerAnchorY" : 0.5,
+            "children" : [
 
+            ],
+            "clip" : true,
+            "codeComponentIdentifier" : "framer\/Scroll",
+            "codeComponentProps" : {
+              "children" : [
+                {
+                  "enabled" : true,
+                  "type" : "componentinstance",
+                  "value" : "OKD8HKzwZ"
+                }
+              ],
+              "direction" : "vertical",
+              "directionLock" : true,
+              "dragEnabled" : true,
+              "wheelEnabled" : true
+            },
+            "codeOverrideEnabled" : false,
+            "constraintsLocked" : false,
+            "deviceType" : null,
+            "exportOptions" : [
+
+            ],
+            "fillColor" : "rgba(255,255,255,1)",
+            "fillEnabled" : false,
+            "fillImage" : null,
+            "fillImagePixelHeight" : null,
+            "fillImagePixelWidth" : null,
+            "fillImageResize" : "fill",
+            "fillType" : "color",
+            "height" : 812,
+            "heightType" : 0,
+            "id" : "P4BGMQKsV",
+            "intrinsicHeight" : null,
+            "intrinsicWidth" : null,
+            "left" : 0,
+            "locked" : false,
+            "name" : null,
+            "opacity" : 1,
+            "originalid" : null,
+            "parentid" : "c2CXk66B9",
+            "previewSettings" : null,
+            "radius" : 0,
+            "radiusBottomLeft" : 0,
+            "radiusBottomRight" : 0,
+            "radiusIsRelative" : false,
+            "radiusPerCorner" : false,
+            "radiusTopLeft" : 0,
+            "radiusTopRight" : 0,
+            "right" : 0,
+            "rotation" : 0,
+            "top" : 0,
+            "visible" : true,
+            "width" : 375,
+            "widthType" : 0
+          }
         ],
         "clip" : true,
         "codeOverrideEnabled" : false,
@@ -58,7 +120,7 @@
         "isExternalMaster" : null,
         "isMaster" : false,
         "isTarget" : false,
-        "left" : 0,
+        "left" : -859,
         "locked" : false,
         "name" : null,
         "navigationTarget" : null,
@@ -68,7 +130,15 @@
         "opacity" : 1,
         "originalid" : null,
         "parentid" : "jLUPs9gNN",
-        "previewSettings" : null,
+        "previewSettings" : {
+          "__class" : "PreviewSettings",
+          "bezel" : false,
+          "deviceType" : null,
+          "responsive" : true,
+          "rotate" : false,
+          "touch" : false,
+          "zoom" : -1
+        },
         "radius" : 0,
         "radiusBottomLeft" : 0,
         "radiusBottomRight" : 0,
