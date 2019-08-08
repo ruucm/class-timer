@@ -9,6 +9,7 @@ const Bar = ({ timeAmount, ...props }) => {
       }}
       transition={{
         duration: timeAmount * 60,
+        ease: 'linear',
       }}
       width="100%"
       height={1}

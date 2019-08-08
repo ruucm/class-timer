@@ -274,7 +274,7 @@
         "codeComponentIdentifier" : ".\/Tasks.tsx_Tasks",
         "codeComponentProps" : {
           "showTimer" : true,
-          "timeAmount" : 180
+          "timeAmount" : 60
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -289,7 +289,7 @@
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
         "fillType" : "color",
-        "height" : 947,
+        "height" : 955,
         "heightType" : 0,
         "id" : "OKD8HKzwZ",
         "intrinsicHeight" : null,
