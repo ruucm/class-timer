@@ -83,28 +83,35 @@ export function Tasks({
         startMin={startMin}
         timeAmount={timeAmount}
       />
-      <Task timeAmount={timeAmount} name="킥오프" time={10} />
+      <Task timeAmount={timeAmount} name="[🚩고블린(복습)]" time={15} />
+      <Task timeAmount={timeAmount} name="[🚩퀘스트 리뷰]" time={25} />
       <Task
         timeAmount={timeAmount}
-        name="프로그램 및 Extension 설치"
-        time={20}
+        name="[🚩튜토리얼] - useAnimation-width"
+        time={10}
       />
-      <Task timeAmount={timeAmount} name="Framer 시작하기" time={10} />
-      <Task timeAmount={timeAmount} name="Properties I" time={5} />
-      <Task timeAmount={timeAmount} name="Override" time={5} />
-      <Task timeAmount={timeAmount} name="start-override" time={10} />
-      <Task timeAmount={timeAmount} name="Animation" time={10} />
-      <Task timeAmount={timeAmount} name="@@Break Time@@" time={10} />
-      <Task timeAmount={timeAmount} name="width" time={10} />
-      <Task timeAmount={timeAmount} name="background" time={10} />
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩튜토리얼] - facebook-login"
+        time={25}
+      />
+      <Task timeAmount={timeAmount} name="(쉬는시간)" time={10} />
+      <Task timeAmount={timeAmount} name="[🚩개념]" time={10} />
+      <Task timeAmount={timeAmount} name="[🚩튜토리얼]" time={15} />
+      <Task timeAmount={timeAmount} name="[🚩고블린]" time={10} />
+      <Task timeAmount={timeAmount} name="[🚩개념] - Javascript" time={10} />
 
-      <Task timeAmount={timeAmount} name="top" time={10} />
-      <Task timeAmount={timeAmount} name="scale-rotate-opacity" time={10} />
-      <Task timeAmount={timeAmount} name="height" time={15} />
-      <Task timeAmount={timeAmount} name="onTap" time={10} />
-      <Task timeAmount={timeAmount} name="basic-card" time={15} />
-      <Task timeAmount={timeAmount} name="overflow-top" time={10} />
-      <Task timeAmount={timeAmount} name="text-color" time={10} />
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩튜토리얼] - TapHandles"
+        time={10}
+      />
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩튜토리얼] - ripple-effect"
+        time={15}
+      />
+      <Task timeAmount={timeAmount} name="[🚩고블린]" time={25} />
     </Stack>
   )
 }
