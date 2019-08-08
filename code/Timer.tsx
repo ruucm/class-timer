@@ -26,7 +26,7 @@ export function Timer({ timeAmount, ...props }) {
       style={{
         position: 'absolute',
         top: 0,
-        zIndex: 999,
+        zIndex: 1,
       }}
     >
       <Bar timeAmount={timeAmount} />

@@ -274,7 +274,9 @@
         "codeComponentIdentifier" : ".\/Tasks.tsx_Tasks",
         "codeComponentProps" : {
           "showTimer" : true,
-          "timeAmount" : 60
+          "startHour" : 7,
+          "startMin" : 40,
+          "timeAmount" : 180
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -289,7 +291,7 @@
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
         "fillType" : "color",
-        "height" : 955,
+        "height" : 964,
         "heightType" : 0,
         "id" : "OKD8HKzwZ",
         "intrinsicHeight" : null,
@@ -313,6 +315,71 @@
         "top" : 0,
         "visible" : true,
         "width" : 200,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+
+        ],
+        "clip" : true,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(217, 255, 0, 0.2)",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 130,
+        "heightType" : 0,
+        "id" : "ztEVDUdeU",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : 169,
+        "locked" : false,
+        "name" : null,
+        "navigationTarget" : null,
+        "navigationTransition" : "push",
+        "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
+        "navigationTransitionDirection" : "left",
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "jLUPs9gNN",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : null,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 382,
+        "visible" : true,
+        "width" : 170,
         "widthType" : 0
       }
     ],
