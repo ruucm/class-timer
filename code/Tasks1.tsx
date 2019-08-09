@@ -63,7 +63,7 @@ const TimeIndicators = ({ startHour, startMin, timeAmount, ...props }) => {
   )
 }
 
-export function Tasks({
+export function Tasks1({
   showTimer,
   timeAmount,
   startHour,
@@ -83,45 +83,105 @@ export function Tasks({
         startMin={startMin}
         timeAmount={timeAmount}
       />
-      <Task timeAmount={timeAmount} name="[🚩고블린(복습)]" time={15} />
-      <Task timeAmount={timeAmount} name="[🚩퀘스트 리뷰]" time={25} />
       <Task
         timeAmount={timeAmount}
-        name="[🚩튜토리얼] - useAnimation-width"
+        name="[🚩고블린(복습)] - Data, useAnimation"
+        time={15}
+      />
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩고블린(복습)] - TapHandlers"
         time={10}
       />
       <Task
         timeAmount={timeAmount}
-        name="[🚩튜토리얼] - facebook-login"
-        time={25}
+        name="[🚩퀘스트 리뷰] - instagram-story"
+        time={10}
       />
-      <Task timeAmount={timeAmount} name="(쉬는시간)" time={10} />
-      <Task timeAmount={timeAmount} name="[🚩개념]" time={10} />
-      <Task timeAmount={timeAmount} name="[🚩튜토리얼]" time={15} />
-      <Task timeAmount={timeAmount} name="[🚩고블린]" time={10} />
-      <Task timeAmount={timeAmount} name="[🚩개념] - Javascript" time={10} />
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩퀘스트 리뷰] - appstore-tap"
+        time={15}
+      />
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩개념] - Properties III"
+        time={10}
+      />
 
       <Task
         timeAmount={timeAmount}
-        name="[🚩튜토리얼] - TapHandles"
+        name="[🚩튜토리얼] - 🐝 text-button"
         time={10}
       />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩튜토리얼] - 🐝 input-key"
+        time={10}
+      />
+
+      <Task timeAmount={timeAmount} name="@@@ Break Time @@@" time={10} />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩개념] - Javascript - Await"
+        time={5}
+      />
+
+      <Task timeAmount={timeAmount} name="[🚩튜토리얼] - await" time={10} />
+
       <Task
         timeAmount={timeAmount}
         name="[🚩튜토리얼] - ripple-effect"
         time={15}
       />
-      <Task timeAmount={timeAmount} name="[🚩고블린]" time={25} />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩개념] - Javascript - 조건문"
+        time={5}
+      />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩튜토리얼] - if-else-click"
+        time={10}
+      />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩튜토리얼] - open-close"
+        time={10}
+      />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩고블린] - appstore-tap"
+        time={15}
+      />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩고블린] - if-else-move-box"
+        time={10}
+      />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩튜토리얼] - conditional-operator"
+        time={10}
+      />
     </Stack>
   )
 }
 
-Tasks.defaultProps = {
+Tasks1.defaultProps = {
   showTimer: false,
   timeAmount: 180,
 }
 
-addPropertyControls(Tasks, {
+addPropertyControls(Tasks1, {
   showTimer: {
     type: ControlType.Boolean,
     title: 'Show Timer',
