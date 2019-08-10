@@ -122,8 +122,8 @@
         "codeComponentIdentifier" : ".\/Tasks2.tsx_Tasks2",
         "codeComponentProps" : {
           "showTimer" : false,
-          "startHour" : 7,
-          "startMin" : 40,
+          "startHour" : 1,
+          "startMin" : 0,
           "timeAmount" : 180
         },
         "codeOverrideEnabled" : false,
@@ -178,8 +178,8 @@
         "codeComponentIdentifier" : ".\/Tasks1.tsx_Tasks1",
         "codeComponentProps" : {
           "showTimer" : false,
-          "startHour" : 7,
-          "startMin" : 40,
+          "startHour" : 1,
+          "startMin" : 0,
           "timeAmount" : 180
         },
         "codeOverrideEnabled" : false,

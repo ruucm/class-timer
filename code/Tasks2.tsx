@@ -83,95 +83,70 @@ export function Tasks2({
         startMin={startMin}
         timeAmount={timeAmount}
       />
+
+      <Task timeAmount={timeAmount} name="[🚩고블린(복습)] - text" time={10} />
       <Task
         timeAmount={timeAmount}
-        name="[🚩고블린(복습)] - Data, useAnimation"
-        time={15}
-      />
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩고블린(복습)] - TapHandlers"
-        time={10}
-      />
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩퀘스트 리뷰] - instagram-story"
-        time={10}
-      />
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩퀘스트 리뷰] - appstore-tap"
-        time={15}
-      />
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩개념] - Properties III"
+        name="[🚩고블린(복습)] - if/else"
         time={10}
       />
 
       <Task
         timeAmount={timeAmount}
-        name="[🚩튜토리얼] - 🐝 text-button"
+        name="[🚩퀘스트 리뷰] - audio-play-button"
         time={10}
       />
 
       <Task
         timeAmount={timeAmount}
-        name="[🚩튜토리얼] - 🐝 input-key"
+        name="[🚩튜토리얼] - audio-play"
         time={10}
       />
 
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩퀘스트 리뷰] - instagram-like"
+        time={20}
+      />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩개념] - Javascript 함수 / random() 함수"
+        time={10}
+      />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩튜토리얼] - 🐝random-left"
+        time={10}
+      />
       <Task timeAmount={timeAmount} name="@@@ Break Time @@@" time={10} />
 
       <Task
         timeAmount={timeAmount}
-        name="[🚩개념] - Javascript - Await"
-        time={5}
+        name="[🚩개념] - Javascript 변수 - Array, Object"
+        time={10}
       />
-
-      <Task timeAmount={timeAmount} name="[🚩튜토리얼] - await" time={10} />
 
       <Task
         timeAmount={timeAmount}
-        name="[🚩튜토리얼] - ripple-effect"
+        name="[🚩튜토리얼] - 🐝random-left"
+        time={10}
+      />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩튜토리얼] - 🐝array-random"
         time={15}
       />
 
       <Task
         timeAmount={timeAmount}
-        name="[🚩개념] - Javascript - 조건문"
-        time={5}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - if-else-click"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - open-close"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩고블린] - appstore-tap"
+        name="[🚩튜토리얼] - array-layer-name"
         time={15}
       />
 
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩고블린] - if-else-move-box"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - conditional-operator"
-        time={10}
-      />
+      <Task timeAmount={timeAmount} name="[🚩튜토리얼] - object" time={15} />
     </Stack>
   )
 }

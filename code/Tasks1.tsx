@@ -85,6 +85,12 @@ export function Tasks1({
       />
       <Task
         timeAmount={timeAmount}
+        name="[🚩복습] - 지난시간 개념들 (JS 중점으로)"
+        time={10}
+      />
+
+      <Task
+        timeAmount={timeAmount}
         name="[🚩고블린(복습)] - Data, useAnimation"
         time={15}
       />
@@ -111,13 +117,7 @@ export function Tasks1({
 
       <Task
         timeAmount={timeAmount}
-        name="[🚩튜토리얼] - 🐝 text-button"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - 🐝 input-key"
+        name="[🚩튜토리얼] - text-button"
         time={10}
       />
 
@@ -157,19 +157,19 @@ export function Tasks1({
 
       <Task
         timeAmount={timeAmount}
-        name="[🚩고블린] - appstore-tap"
-        time={15}
-      />
-
-      <Task
-        timeAmount={timeAmount}
         name="[🚩고블린] - if-else-move-box"
         time={10}
       />
 
       <Task
         timeAmount={timeAmount}
-        name="[🚩튜토리얼] - conditional-operator"
+        name="[🚩고블린] - appstore-tap"
+        time={15}
+      />
+
+      <Task
+        timeAmount={timeAmount}
+        name="[🚩튜토리얼] - open-close (conditional-operator)"
         time={10}
       />
     </Stack>
