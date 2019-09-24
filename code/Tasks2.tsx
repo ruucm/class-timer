@@ -4,6 +4,7 @@ import { Task } from './Task'
 import { Timer } from './Timer'
 import styled, { css } from 'styled-components'
 import { heightPerMin } from './shared/consts'
+import tasks2 from './tasks/tasks2.js'
 
 const Wrap = styled.div`
   /* background: rgba(217, 255, 0, 0.4); */
@@ -70,6 +71,8 @@ export function Tasks2({
   startMin,
   ...props
 }) {
+  var tasksTimeSum = 0
+  for (let i = 0; i < tasks2.length; i++) tasksTimeSum += tasks2[i].time
   return (
     <Stack
       width="100%"
@@ -83,70 +86,15 @@ export function Tasks2({
         startMin={startMin}
         timeAmount={timeAmount}
       />
-
-      <Task timeAmount={timeAmount} name="[🚩고블린(복습)] - text" time={10} />
+      {tasks2.map((task, id) => (
+        <Task timeAmount={timeAmount} name={task.name} time={task.time} />
+      ))}
       <Task
         timeAmount={timeAmount}
-        name="[🚩고블린(복습)] - if/else"
-        time={10}
+        name="BACKUP TIME"
+        time={timeAmount - tasksTimeSum}
+        opacity={0.5}
       />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩퀘스트 리뷰] - audio-play-button"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - audio-play"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩퀘스트 리뷰] - instagram-like"
-        time={20}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩개념] - Javascript 함수 / random() 함수"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - 🐝random-left"
-        time={10}
-      />
-      <Task timeAmount={timeAmount} name="@@@ Break Time @@@" time={10} />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩개념] - Javascript 변수 - Array, Object"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - 🐝random-left"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - 🐝array-random"
-        time={15}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - array-layer-name"
-        time={15}
-      />
-
-      <Task timeAmount={timeAmount} name="[🚩튜토리얼] - object" time={15} />
     </Stack>
   )
 }

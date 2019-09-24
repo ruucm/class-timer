@@ -4,6 +4,7 @@ import { Task } from './Task'
 import { Timer } from './Timer'
 import styled, { css } from 'styled-components'
 import { heightPerMin } from './shared/consts'
+import tasks1 from './tasks/tasks1.js'
 
 const Wrap = styled.div`
   /* background: rgba(217, 255, 0, 0.4); */
@@ -70,6 +71,8 @@ export function Tasks1({
   startMin,
   ...props
 }) {
+  var tasksTimeSum = 0
+  for (let i = 0; i < tasks1.length; i++) tasksTimeSum += tasks1[i].time
   return (
     <Stack
       width="100%"
@@ -83,94 +86,14 @@ export function Tasks1({
         startMin={startMin}
         timeAmount={timeAmount}
       />
+      {tasks1.map((task, id) => (
+        <Task timeAmount={timeAmount} name={task.name} time={task.time} />
+      ))}
       <Task
         timeAmount={timeAmount}
-        name="[🚩복습] - 지난시간 개념들 (JS 중점으로)"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩고블린(복습)] - Data, useAnimation"
-        time={15}
-      />
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩고블린(복습)] - TapHandlers"
-        time={10}
-      />
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩퀘스트 리뷰] - instagram-story"
-        time={10}
-      />
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩퀘스트 리뷰] - appstore-tap"
-        time={15}
-      />
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩개념] - Properties III"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - text-button"
-        time={10}
-      />
-
-      <Task timeAmount={timeAmount} name="@@@ Break Time @@@" time={10} />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩개념] - Javascript - Await"
-        time={5}
-      />
-
-      <Task timeAmount={timeAmount} name="[🚩튜토리얼] - await" time={10} />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - ripple-effect"
-        time={15}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩개념] - Javascript - 조건문"
-        time={5}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - if-else-click"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - open-close"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩고블린] - if-else-move-box"
-        time={10}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩고블린] - appstore-tap"
-        time={15}
-      />
-
-      <Task
-        timeAmount={timeAmount}
-        name="[🚩튜토리얼] - open-close (conditional-operator)"
-        time={10}
+        name="BACKUP TIME"
+        time={timeAmount - tasksTimeSum}
+        opacity={0.5}
       />
     </Stack>
   )

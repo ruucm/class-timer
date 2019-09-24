@@ -12,6 +12,7 @@ export function Task({ name, time, timeAmount, ...props }) {
         color: 'white',
         fontSize: 16,
       }}
+      {...props}
     >
       {name} : in {time} min
     </Frame>
