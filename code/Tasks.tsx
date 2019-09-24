@@ -49,9 +49,6 @@ const TimeIndicators = ({ startHour, startMin, timeAmount, ...props }) => {
 
   var times = []
   for (let i = 0; i <= timeAmount / 30; i++) times.push(startMinutes + i * 30)
-
-  console.log('times', times)
-
   return (
     <Wrap>
       {times.map((time, index) => {
@@ -65,7 +62,6 @@ const TimeIndicators = ({ startHour, startMin, timeAmount, ...props }) => {
   )
 }
 function readTextFile(file, callback) {
-  // console.log('file', decodeURIComponent(file))
   var rawFile = new XMLHttpRequest()
   rawFile.overrideMimeType('application/json')
   rawFile.open('GET', file, true)
@@ -82,19 +78,28 @@ export function Tasks({
   timeAmount,
   startHour,
   startMin,
+  useUpload,
   tasksFile,
+  tasksFileName,
   ...props
 }) {
   const [tasks, setTasks] = React.useState([])
   const [tasksTimeSum, setTasksTimeSum] = React.useState([])
   React.useEffect(() => {
-    readTextFile(decodeURIComponent(tasksFile), text => {
-      var data = JSON.parse(text)
-      setTasks(data.tasks)
-      var res = 0
-      for (let i = 0; i < data.tasks.length; i++) res += data.tasks[i].time
-      setTasksTimeSum(res)
-    })
+    readTextFile(
+      decodeURIComponent(
+        useUpload
+          ? tasksFile
+          : location.origin + '/assets/' + tasksFileName + '.json'
+      ),
+      text => {
+        var data = JSON.parse(text)
+        setTasks(data.tasks)
+        var res = 0
+        for (let i = 0; i < data.tasks.length; i++) res += data.tasks[i].time
+        setTasksTimeSum(res)
+      }
+    )
   }, [])
   return (
     <Stack
@@ -171,8 +176,23 @@ addPropertyControls(Tasks, {
     step: 5,
     displayStepper: true,
   },
+  useUpload: {
+    type: ControlType.Boolean,
+    title: 'Use Upload',
+    enabledTitle: 'Use',
+    disabledTitle: 'Nope',
+  },
   tasksFile: {
     type: ControlType.File,
     allowedFileTypes: ['json'],
+    hidden(props) {
+      return props.useUpload === false
+    },
+  },
+  tasksFileName: {
+    type: ControlType.String,
+    hidden(props) {
+      return props.useUpload === true
+    },
   },
 })
