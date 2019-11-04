@@ -26,6 +26,7 @@
         "fillColor" : "rgba(255,255,255,1)",
         "fillEnabled" : false,
         "fillImage" : null,
+        "fillImageOriginalName" : null,
         "fillImagePixelHeight" : null,
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
@@ -79,6 +80,7 @@
         "fillColor" : "rgba(255,255,255,1)",
         "fillEnabled" : false,
         "fillImage" : null,
+        "fillImageOriginalName" : null,
         "fillImagePixelHeight" : null,
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
@@ -122,8 +124,8 @@
         "codeComponentIdentifier" : ".\/Tasks.tsx_Tasks",
         "codeComponentProps" : {
           "showTimer" : false,
-          "startHour" : 1,
-          "startMin" : 0,
+          "startHour" : 7,
+          "startMin" : 40,
           "tasksFile" : "http:\/\/127.0.0.1:4567\/assets\/tasks-mock.json",
           "tasksFileName" : "tasks1-2",
           "timeAmount" : 180,
@@ -138,6 +140,7 @@
         "fillColor" : "rgba(255,255,255,1)",
         "fillEnabled" : false,
         "fillImage" : null,
+        "fillImageOriginalName" : null,
         "fillImagePixelHeight" : null,
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
@@ -181,8 +184,8 @@
         "codeComponentIdentifier" : ".\/Tasks.tsx_Tasks",
         "codeComponentProps" : {
           "showTimer" : false,
-          "startHour" : 1,
-          "startMin" : 0,
+          "startHour" : 7,
+          "startMin" : 40,
           "tasksFile" : "http:\/\/127.0.0.1:4567\/assets\/tasks-mock.json",
           "tasksFileName" : "tasks1-1",
           "timeAmount" : 180,
@@ -197,6 +200,7 @@
         "fillColor" : "rgba(255,255,255,1)",
         "fillEnabled" : false,
         "fillImage" : null,
+        "fillImageOriginalName" : null,
         "fillImagePixelHeight" : null,
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
@@ -240,8 +244,8 @@
         "codeComponentIdentifier" : ".\/Tasks.tsx_Tasks",
         "codeComponentProps" : {
           "showTimer" : false,
-          "startHour" : 7,
-          "startMin" : 40,
+          "startHour" : 1,
+          "startMin" : 0,
           "tasksFile" : "http:\/\/127.0.0.1:4567\/assets\/tasks-mock.json",
           "tasksFileName" : "tasks2-1",
           "timeAmount" : 180,
@@ -256,6 +260,7 @@
         "fillColor" : "rgba(255,255,255,1)",
         "fillEnabled" : false,
         "fillImage" : null,
+        "fillImageOriginalName" : null,
         "fillImagePixelHeight" : null,
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
@@ -299,8 +304,8 @@
         "codeComponentIdentifier" : ".\/Tasks.tsx_Tasks",
         "codeComponentProps" : {
           "showTimer" : false,
-          "startHour" : 7,
-          "startMin" : 40,
+          "startHour" : 1,
+          "startMin" : 0,
           "tasksFile" : "http:\/\/127.0.0.1:4567\/assets\/tasks-mock.json",
           "tasksFileName" : "tasks2-2",
           "timeAmount" : 180,
@@ -315,6 +320,7 @@
         "fillColor" : "rgba(255,255,255,1)",
         "fillEnabled" : false,
         "fillImage" : null,
+        "fillImageOriginalName" : null,
         "fillImagePixelHeight" : null,
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
@@ -364,5 +370,5 @@
     ],
     "visible" : false
   },
-  "version" : 54
+  "version" : 55
 }

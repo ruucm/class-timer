@@ -6,7 +6,7 @@
     },
     {
       "name": "[🚩복습] - HTML / JSX & CSS / Styling in React",
-      "time": 5
+      "time": 15
     },
     {
       "name": "[🚩퀘스트 리뷰] - simple-jump-comp",
@@ -14,11 +14,11 @@
     },
     {
       "name": "[🚩퀘스트 리뷰] - layers-array",
-      "time": 15
+      "time": 20
     },
     {
       "name": "[🚩퀘스트 리뷰] - page-background-blur",
-      "time": 10
+      "time": 15
     },
     {
       "name": "[🚩퀘스트 리뷰] - kakao-bank-main",
@@ -29,12 +29,12 @@
       "time": 15
     },
     {
-      "name": "[🚩튜토리얼] - page-transition-browse-1",
-      "time": 20
-    },
-    {
       "name": "@@@ Break Time @@@",
       "time": 10
+    },
+    {
+      "name": "[🚩튜토리얼] - page-transition-browse-1",
+      "time": 20
     },
     {
       "name": "[🚩개념] - Properties VI",
@@ -42,15 +42,11 @@
     },
     {
       "name": "[🚩개념] - Property Controls",
-      "time": 10
+      "time": 15
     },
     {
       "name": "[🚩튜토리얼] - Typography",
-      "time": 20
-    },
-    {
-      "name": "[🚩튜토리얼] - Spacing",
-      "time": 15
+      "time": 25
     }
   ]
 }
