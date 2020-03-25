@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { Frame, addPropertyControls, ControlType } from 'framer'
+import * as React from "react";
+import { Frame, addPropertyControls, ControlType } from "framer";
 
 const Bar = ({ timeAmount, ...props }) => {
   return (
@@ -9,34 +9,34 @@ const Bar = ({ timeAmount, ...props }) => {
       }}
       transition={{
         duration: timeAmount * 60,
-        ease: 'linear',
+        ease: "linear",
       }}
       width="100%"
       height={1}
       background="red"
     />
-  )
-}
+  );
+};
 
 export function Timer({ timeAmount, ...props }) {
   return (
     <Frame
-      //   background="green"
+      background=""
       size="100%"
       style={{
-        position: 'absolute',
+        position: "absolute",
         top: 0,
         zIndex: 1,
       }}
     >
       <Bar timeAmount={timeAmount} />
     </Frame>
-  )
+  );
 }
 
 Timer.defaultProps = {
   timeAmount: 180,
-}
+};
 
 addPropertyControls(Timer, {
   timeAmount: {
@@ -44,8 +44,8 @@ addPropertyControls(Timer, {
     defaultValue: 180,
     min: 0,
     max: 3600,
-    unit: 'min',
+    unit: "min",
     step: 5,
     displayStepper: true,
   },
-})
+});
